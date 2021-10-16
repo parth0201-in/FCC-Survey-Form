@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
+
+body{
+   font-size:1rem;
+   width:100%;
+   height:auto;
+   font-family:'Poppins',sans-serif;
+   font-weight:400;
+   line-height:1.4;
+   color:white;
+   margin:0;
+   background:linear-gradient(0deg,black,lightblue,lightblue,black);
+}
+
+@media(min-width:768px){
+   .container{
+       max-width:750px;
+   }
+}
+@media(max-width:749px){
+   .container{
+       max-width:100%;
+   }
+   fieldset{
+       display:inline;
+   }
+}
+
+/*Main div consisting of all elements except footer*/
+.container{
+   width:100%;
+   height:auto;
+   margin:50px auto;
+   box-sizing:border-box;
+}
+header{
+   text-align:center;
+}
+span{
+   font-size:0.8rem;
+}
+#title{
+   font-size:30px;
+}
+
+#description{
+   font-style:italic;
+}
+#survey-form{
+   background:rgba(0,0,0,0.7);
+   border-radius:10px;
+   padding:40px;
+   box-sizing:border-box;
+   display:block;
+}
+
+.text-type label{
+   display:block;
+   margin-bottom:5px;
+   margin-top:20px;
+}
+.text-type input{
+   background:transparent;
+   width:100%;
+   height:40px;
+   color:white;
+   border-radius:5px;
+   border-color:rgba(255,255,255,0.5);
+   box-sizing:border-box;
+   padding:5px;
+}
+.text-type select{
+   background:transparent;
+   width:100%;
+   height:40px;
+   color:white;
+   border-radius:5px;
+   border-color:rgba(255,255,255,0.5);
+   box-sizing:border-box;
+}
+
+fieldset{
+   background:transparent;
+   border-radius:5px;
+   margin-top:20px;
+   width:100%;
+   box-sizing:border-box;
+   border-color:rgba(255,255,255,0.5);
+   display:grid;
+   justify-items:left;
+   grid-template-columns:30px 1fr;
+}
+
+fieldset > label{
+   color:rgba(255,255,255,0.8);
+}
+
+.comments{
+   display:grid;
+   grid-template-columns:1fr;
+   width:100%;
+}
+.comments label{
+   margin:20px 0 5px 0;
+}
+.comments textarea{
+   background:transparent;
+   border-color:rgba(255,255,255,0.5);
+   border-radius:5px;
+   color:white;
+   height:150px;
+}
+.comments button{
+   background:transparent;
+   border-radius:5px;
+   margin-top:20px;
+   height:40px;
+   color:rgba(255,255,255,0.5);
+   font-size:1.5rem;
+   border-color:rgba(255,255,255,0.5);
+   transition:0s background color;
+}
+button:hover{
+   color:#000000;
+   background-color:#FFFFFF;
+   transition-duration:0.3s;
+}
+
+footer{
+   display:block;
+   margin-bottom:0;
+   background:transparent;
+   text-align:center;
+   padding:5px;
+}
